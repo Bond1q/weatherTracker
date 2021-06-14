@@ -3,7 +3,7 @@ import axios from "axios";
 const paraments = (city) => {
 	return {
 		method: 'GET',
-		url: 'http://api.weatherapi.com/v1/forecast.json',
+		url: 'https://api.weatherapi.com/v1/forecast.json',
 		params: { q: city, days: 10 },
 		headers: {
 			'key': 'c4689bb50523409b927181316212105'
