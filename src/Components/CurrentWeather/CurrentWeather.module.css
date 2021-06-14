@@ -1,0 +1,97 @@
+.currentWeather {
+	max-width: 900px;
+	margin: 0 auto;
+	text-align: center;
+	margin-top: 12px;
+	background: rgb(4, 111, 148);
+	border-radius: 10px;
+	color: white;
+	background: -moz-linear-gradient(180deg, rgba(4, 111, 148, 1) 0%, rgba(50, 146, 172, 1) 100%);
+	background: -webkit-linear-gradient(180deg, rgba(4, 111, 148, 1) 0%, rgba(50, 146, 172, 1) 100%);
+	background: linear-gradient(180deg, rgba(4, 111, 148, 1) 0%, rgba(50, 146, 172, 1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#046f94", endColorstr="#3292ac", GradientType=1);
+	padding: 20px 25px 20px 25px;
+	box-sizing: border-box;
+}
+
+
+.mainChapter {
+	padding-bottom: 25px;
+}
+
+.mainChapter .location {
+	/* display: inline-block; */
+	text-align: left;
+	font-size: 25px;
+	
+}
+.mainChapter .location span {
+	margin-left: 5px;
+	font-size: 23px;
+}
+
+.mainChapter .location b {
+
+	font-size: 40px;
+	margin-right: 8px;
+
+}
+
+.mainChapter .icon {
+	float: right;
+	margin-top: -50px;
+}
+
+.mainChapter .icon img {
+	width: 100%;
+}
+
+.mainChapter .typeWeather {
+	text-align: left;
+	font-size: 30px;
+
+}
+
+.weatherConditions {
+	text-align: left;
+
+}
+
+.weatherConditions .row {
+	display: flex;
+
+}
+
+.weatherConditions div {
+
+	margin-bottom: 12px;
+	font-size: 23px;
+
+
+}
+
+.weatherConditions img {
+	width: 24px;
+	margin-right: 13px;
+	display: inline-block;
+	/* margin-top: -5px; */
+}
+
+.weatherConditions span {
+	margin-left: 2px;
+}
+
+.weatherConditions div:last-child {
+	margin-bottom: 0px;
+}
+
+@media screen and (max-width: 479px){
+	.currentWeather{
+		width: 100%;
+		border-radius: 0;
+
+	}
+	*{
+		overflow-x: hidden;
+	}
+}

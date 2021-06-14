@@ -1,13 +1,30 @@
+@font-face {
+
+	font-family: "EMPORO";
+	src: url("./Fonts/EMPORO.TTF") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+	margin: 0;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	min-height: 100vh;
+	background: rgb(126, 185, 202);
+	background: -moz-linear-gradient(180deg, rgba(126, 185, 202, 1) 0%, rgba(131, 190, 206, 1) 15%, rgba(139, 196, 211, 1) 37%, rgba(145, 201, 216, 1) 55%, rgba(152, 207, 221, 1) 74%, rgba(156, 210, 224, 1) 85%, rgba(161, 215, 227, 1) 100%);
+	background: -webkit-linear-gradient(180deg, rgba(126, 185, 202, 1) 0%, rgba(131, 190, 206, 1) 15%, rgba(139, 196, 211, 1) 37%, rgba(145, 201, 216, 1) 55%, rgba(152, 207, 221, 1) 74%, rgba(156, 210, 224, 1) 85%, rgba(161, 215, 227, 1) 100%);
+	background: linear-gradient(180deg, rgba(126, 185, 202, 1) 0%, rgba(131, 190, 206, 1) 15%, rgba(139, 196, 211, 1) 37%, rgba(145, 201, 216, 1) 55%, rgba(152, 207, 221, 1) 74%, rgba(156, 210, 224, 1) 85%, rgba(161, 215, 227, 1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#7eb9ca", endColorstr="#a1d7e3", GradientType=1);
+}
+
+* {
+	font-family: EMPORO;
+	font-size: 16px;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+	font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+		monospace;
 }
+
