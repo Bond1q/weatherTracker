@@ -24,16 +24,3 @@ export const weatherForecast = async (city) => {
 	}
 }
 
-// const instance = axios.create({
-// 	url: 'http://api.weatherapi.com/v1/forecast.json',
-// 	params: { q: 'Paris', days: 3 },
-// 	headers: {
-// 		'key': 'c4689bb50523409b927181316212105'
-// 	}
-// })
-
-// export const weatherForecastApi = {
-// 	forecast: () => {
-// 		return instance.get('').then(response => response)
-// 	}
-// }

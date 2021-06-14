@@ -24,11 +24,6 @@ const App = (props) => {
 					<Redirect from="/" to="/current" />
 				</Switch>
 			}
-
-
-
-
-
 		</div>
 	);
 }
