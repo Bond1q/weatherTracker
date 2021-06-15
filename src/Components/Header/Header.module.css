@@ -37,7 +37,6 @@ cursor:initial;
 
 .activeElement{
 	border-bottom: 2px solid white;
-
 }
 
 .header{
@@ -59,14 +58,18 @@ cursor:initial;
 		flex-direction:column;
 		align-items: center;
 		transition: all .5s ease;
-		display: none;
 		padding-top: 0;
+		height: 0;
 	}	
 
 	.element:hover {
 		border-bottom: 1px solid #f5f5f5;
+		
+
 	}
 	.activeElement{
+		background: #1f9cc5;
+
 		border-bottom: 1px solid #f5f5f5;
 	
 	}
@@ -88,22 +91,15 @@ cursor:initial;
 	
 	}
 	
-	/* .toggleRow:hover ~ .row{
-		display: flex;
-	}
-	.toggleRow{
-		font-weight: bold;
-		color: white;
-		text-align: center;
-		padding: 7px 0;
-	} */
+
 	.rowToggle{
 		display: none;
-
 	}
 	.rowToggle:checked ~ .row {
 		display: flex;
-  }
+		height: 200px;
+		
+	}
   .labelToggle{
 	  display: block;
 	  color: white;

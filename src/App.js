@@ -19,8 +19,6 @@ const App = (props) => {
 				<Switch>
 					<Route path='/current' component={CurrentWeatherHook} />
 					<Route path={['/today', '/tomorrow', '/dayAfterTomorrow']} component={ForecastHook} />
-
-					{/* <Route path='/tommorow' component={ForecastHook} /> */}
 					<Redirect from="/" to="/current" />
 				</Switch>
 			}

@@ -23,20 +23,60 @@ const ForecastHook = (props) => {
 	const weatherIndicatorMaker = (indicator, value, index) => {
 		switch (indicator) {
 
+			// case 'time':
+			// 	return <div className={cn(stls.rowElement)} key={0}> <img src={hourImg} alt="" /> {value.slice(10)}</div>
+			// case 'temp_c':
+			// 	return <div title='Temparature' className={cn(stls.rowElement)} key={1}> <img src={temperatureImg} alt="" />  {Math.round(value)}°</div>
+			// case 'condition':
+			// 	return <div className={cn(stls.rowElement)} key={2}><img title={value.text} src={value.icon} alt="" />  </div>
+			// case 'chance_of_rain':
+			// 	return <div title='Rain' className={cn(stls.rowElement)} key={3}><img src={rainImg} alt="" /> {value}%</div>
+			// case 'humidity':
+			// 	return <div title='Humidity' className={cn(stls.rowElement)} key={4}><img src={humidityImg} alt="" /> {value}%</div>
+			// case 'pressure_mb':
+			// 	return <div title='Pressure' className={cn(stls.rowElement)} key={5}><img src={pressureImg} alt="" /> {value}</div>
+			// case 'wind_kph':
+			// 	return <div title='Wind' className={cn(stls.rowElement, stls.rowElementLast)} key={6}><img src={windImg} alt="" /> {addZero(value)} kph</div>
+			// default:
+			// 	return false
+
 			case 'time':
 				return <div className={cn(stls.rowElement)} key={0}> <img src={hourImg} alt="" /> {value.slice(10)}</div>
 			case 'temp_c':
-				return <div title='Temparature' className={cn(stls.rowElement)} key={1}> <img src={temperatureImg} alt="" />  {Math.round(value)}°</div>
+				return <div className={cn(stls.rowElement)} key={1}>
+					<img src={temperatureImg} alt="" />
+					{Math.round(value)}°
+					<span className={stls.tooltiptext}>Temparature</span>
+				</div>
 			case 'condition':
-				return <div className={cn(stls.rowElement)} key={2}><img title={value.text} src={value.icon} alt="" />  </div>
+				return <div className={cn(stls.rowElement)} key={2}>
+					<img src={value.icon} alt="" />
+					<span className={stls.tooltiptext}>{value.text}</span>
+				</div>
 			case 'chance_of_rain':
-				return <div title='Rain' className={cn(stls.rowElement)} key={3}><img src={rainImg} alt="" /> {value}%</div>
+				return <div className={cn(stls.rowElement)} key={3}>
+					<img src={rainImg} alt="" />
+					<span className={stls.tooltiptext}>Rain</span>
+					{value}%
+				</div>
 			case 'humidity':
-				return <div title='Humidity' className={cn(stls.rowElement)} key={4}><img src={humidityImg} alt="" /> {value}%</div>
+				return <div className={cn(stls.rowElement)} key={4}>
+					<img src={humidityImg} alt="" />
+					{value}%
+					<span className={stls.tooltiptext}>Humidity</span>
+				</div>
 			case 'pressure_mb':
-				return <div title='Pressure' className={cn(stls.rowElement)} key={5}><img src={pressureImg} alt="" /> {value}</div>
+				return <div className={cn(stls.rowElement)} key={5}>
+					<img src={pressureImg} alt="" />
+					{value}
+					<span className={stls.tooltiptext}>Pressure</span>
+				</div>
 			case 'wind_kph':
-				return <div title='Wind' className={cn(stls.rowElement, stls.rowElementLast)} key={6}><img src={windImg} alt="" /> {addZero(value)} kph</div>
+				return <div className={cn(stls.rowElement, stls.rowElementLast)} key={6}>
+					<img src={windImg} alt="" />
+					{addZero(value)} kph
+					<span className={stls.tooltiptext}>Wind</span>
+				</div>
 			default:
 				return false
 		}
