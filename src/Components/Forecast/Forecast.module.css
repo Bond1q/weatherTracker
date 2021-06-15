@@ -130,11 +130,7 @@
 
 @media screen and (max-width: 479px) {
 
-	.row {
-		padding: 0;
-		padding-left: 10px;
 
-	}
 
 	.row:last-child {
 
@@ -155,35 +151,23 @@
 		margin-right: 10px;
 	}
 
-	.rowElement :hover~.tooltiptext {
+	.rowElement:hover~.tooltiptext {
 		visibility: visible;
 	}
 
 	.rowElement .tooltiptext {
-		visibility: hidden;
-		width: 80px;
-		background-color: rgba(0, 0, 0, 0.685);
-		color: #fff;
-		text-align: center;
-		font-size: 12px;
-		border-radius: 6px;
+		width: 70px;
 		padding: 0;
-		position: absolute;
-		z-index: 1;
-		bottom: 0%;
+		bottom: 110%;
 		left: 50%;
-		margin-left: -40px;
 	}
 
 	.rowElement:last-child .tooltiptext {
 
-		bottom: 25%;
+		bottom: 90%;
 
 	}
 
-	.rowElement:nth-child(3) .tooltiptext {
-		bottom: 40%;
 
-	}
 
 }
