@@ -3,6 +3,7 @@ import { connect } from 'react-redux';
 import { setCity } from '../../../redux/weather-reducer';
 import stls from './FindCity.module.css'
 import img from '../../../img/findCity.png'
+import { makeChecked } from '../Header'
 const FindCityHook = (props) => {
 
 	const [city, changeCity] = useState('')
@@ -10,16 +11,21 @@ const FindCityHook = (props) => {
 		changeCity(e.target.value)
 	}
 
+
+
 	const enterKeyEvent = (e) => {
 		if (e.key === 'Enter') {
 			props.setCity(city)
 			changeCity('')
+			makeChecked()
 		}
 	}
 
 	const setCleanCityName = (e) => {
-		props.setCity(e.target.value)
+		props.setCity(city)
 		changeCity('')
+		makeChecked()
+
 	}
 
 	return (
@@ -27,7 +33,6 @@ const FindCityHook = (props) => {
 			<div>
 				<input className={stls.inputStl} onKeyDown={enterKeyEvent} type="text" value={city} onChange={changeInput} placeholder={'Write city name'} />
 				<span className={stls.findCity}><img src={img} onClick={setCleanCityName} alt={'find'} /></span>
-
 			</div>
 
 		</div>

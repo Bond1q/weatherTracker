@@ -85,6 +85,7 @@ const ucFirst = (str) => {
 }
 const deleteAllGaps = (word) => word.replace(/ +/g, " ").replace(/^\s+|\s+$/g, "")
 
+
 const weatherReducer = (state = initialStore, action) => {
 	switch (action.type) {
 		case SET_WEATHER:
